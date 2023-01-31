@@ -1,13 +1,13 @@
 const fs = require("fs");
 
 const BASE_URL = "https://stick-timer.vercel.app/edit/";
-const RACE_NAME = "Test Race 1";
-const RANGE_END = 100;
+const RACE_NAME = "2022 Wobble Gobble";
+const RANGE_END = 1000;
 
-const urlArray = [];
+const urlArray = ["Stick Number,URL"];
 
 for (let i = 1; i <= RANGE_END; i++) {
-  const newUrl = `${BASE_URL}${RACE_NAME}/${i}`;
+  const newUrl = `${i},${BASE_URL}${RACE_NAME}/${i}`;
   urlArray.push(newUrl);
 }
 
